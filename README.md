@@ -26,6 +26,7 @@ import SwiftStringHelper
 These following methods are available for working with and manipulating `String` native library. See [Usage](https://github.com/rkukuh/Swift-StringHelper#usage) section below for detail.
 
 - [`after`](https://github.com/rkukuh/Swift-StringHelper#after)
+- [`before`](https://github.com/rkukuh/Swift-StringHelper#before)
 
 ## Usage
 
@@ -38,4 +39,15 @@ let originalString = "john@apple.com"
 let result = originalString.after("@")
 
 print(result) // apple.com
+```
+
+### `before`
+
+The `before` helper returns the portion of a string before the first occurrence of a given value.
+
+```swift
+let originalString = "john@apple.com"
+let result = originalString.before("@")
+
+print(result) // john
 ```
