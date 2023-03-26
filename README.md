@@ -25,7 +25,7 @@ import SwiftStringHelper
 
 These following methods (or properties) are all available on native Swift collection types: `Array`, `Set`, and `Dictionary`. See [Usage](https://github.com/rkukuh/Swift-StringHelper#usage) section below for detail.
 
-- [`after`](https://github.com/rkukuh/Swift-StringHelper#average)
+- [`after`](https://github.com/rkukuh/Swift-StringHelper#after)
 
 ## Usage
 
@@ -34,7 +34,7 @@ These following methods (or properties) are all available on native Swift collec
 The `after` helper returns the remainder of a string after the first occurrence of a given value.
 
 ```swift
-let originalString = "john.appleseed@apple.com"
+let originalString = "john@apple.com"
 let result = originalString.after("@")
 
 print(result) // apple.com
