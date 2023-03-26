@@ -23,13 +23,12 @@ import SwiftStringHelper
 
 ## Available Methods
 
-These following methods (or properties) are all available on native Swift collection types: `Array`, `Set`, and `Dictionary`. See [Usage](https://github.com/rkukuh/Swift-Collections#usage) section below for detail.
+These following methods (or properties) are all available on native Swift collection types: `Array`, `Set`, and `Dictionary`. See [Usage](https://github.com/rkukuh/Swift-StringHelper#usage) section below for detail.
 
-- [`average`](https://github.com/rkukuh/Swift-Collections#average)
-- [`chunk`](https://github.com/rkukuh/Swift-Collections#average)
+- [`after`](https://github.com/rkukuh/Swift-StringHelper#average)
 
 ## Usage
 
-### `average`
+### `after`
 
-The `average` method returns the average value of a given collection data.
+The `after` helper returns the remainder of a string after the first occurrence of a given value.
