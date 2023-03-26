@@ -32,3 +32,10 @@ These following methods (or properties) are all available on native Swift collec
 ### `after`
 
 The `after` helper returns the remainder of a string after the first occurrence of a given value.
+
+```swift
+let originalString = "john.appleseed@apple.com"
+let result = originalString.after("@")
+
+print(result) // apple.com
+```
