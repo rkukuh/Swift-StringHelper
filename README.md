@@ -31,6 +31,7 @@ These following methods are available for working with and manipulating `String`
 
 - [`after`](https://github.com/rkukuh/Swift-StringHelper#after)
 - [`before`](https://github.com/rkukuh/Swift-StringHelper#before)
+- [`between`](https://github.com/rkukuh/Swift-StringHelper#between)
 
 ## Usage
 
@@ -54,4 +55,15 @@ let originalString = "john@apple.com"
 let result = originalString.before("@")
 
 print(result) // john
+```
+
+### `between`
+
+The `before` helper returns the portion of a string between two values.
+
+```swift
+let originalString = "john@apple.com"
+let result = originalString.between("john@", and: ".com")
+
+print(result) // Optional("apple")
 ```
