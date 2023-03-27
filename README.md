@@ -1,6 +1,6 @@
 # Swift String Helper
 
-The `SwiftStringHelper` package provides a fluent, convenient extensions for working with and manipulating String.
+This is a **Swift package** that provides a fluent, convenient extensions for working with and manipulating String in a more elegant and expressive manner.
 
 ## Installation
 
