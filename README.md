@@ -27,7 +27,7 @@ import SwiftStringHelper
 
 ## Available Methods
 
-These following methods are available for working with and manipulating `String` native library. See [Usage](https://github.com/rkukuh/Swift-StringHelper#usage) section below for detail.
+These following methods are available for working with and manipulating `String` native library.
 
 - [`after`](https://github.com/rkukuh/Swift-StringHelper#after)
 - [`before`](https://github.com/rkukuh/Swift-StringHelper#before)
