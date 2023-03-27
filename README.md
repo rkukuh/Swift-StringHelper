@@ -2,6 +2,10 @@
 
 This is a **Swift package** that provides a fluent, convenient extensions for working with and manipulating String in a more elegant and expressive manner.
 
+![Platform](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-333333.svg) 
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/rkukuh/Swift-StringHelper) 
+![GitHub](https://img.shields.io/github/license/rkukuh/Swift-StringHelper)
+
 ## Installation
 
 1. Open your existing Xcode project or create a new one.
