@@ -32,6 +32,7 @@ These following methods are available for working with and manipulating `String`
 - [`after`](https://github.com/rkukuh/Swift-StringHelper#after)
 - [`before`](https://github.com/rkukuh/Swift-StringHelper#before)
 - [`between`](https://github.com/rkukuh/Swift-StringHelper#between)
+- [`camel case`](https://github.com/rkukuh/Swift-StringHelper#camel-case)
 
 ## Usage
 
@@ -66,4 +67,15 @@ let originalString = "john@apple.com"
 let result = originalString.between("john@", and: ".com")
 
 print(result) // Optional("apple")
+```
+
+### `camel case`
+
+The `camelCased` helper converts the given string to camelCaseLikeThis.
+
+```swift
+var originalString = "Everyone CAN Code"
+var result = originalString.camelCased()
+
+print(result) // everyoneCanCode
 ```
