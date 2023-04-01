@@ -32,13 +32,14 @@ These following methods are available for working with and manipulating `String`
 - [`after`](https://github.com/rkukuh/Swift-StringHelper#after)
 - [`before`](https://github.com/rkukuh/Swift-StringHelper#before)
 - [`between`](https://github.com/rkukuh/Swift-StringHelper#between)
-- [`camel case`](https://github.com/rkukuh/Swift-StringHelper#camel-case)
+- [`camelCase`](https://github.com/rkukuh/Swift-StringHelper#camelcased)
+- [`containsAll`](https://github.com/rkukuh/Swift-StringHelper#containsall)
 
 ## Usage
 
 ### `after`
 
-The `after` helper returns the remainder of a string after the first occurrence of a given value.
+The `after()` helper returns the remainder of a string after the first occurrence of a given value.
 
 ```swift
 let originalString = "john@apple.com"
@@ -49,7 +50,7 @@ print(result) // apple.com
 
 ### `before`
 
-The `before` helper returns the portion of a string before the first occurrence of a given value.
+The `before()` helper returns the portion of a string before the first occurrence of a given value.
 
 ```swift
 let originalString = "john@apple.com"
@@ -60,7 +61,7 @@ print(result) // john
 
 ### `between`
 
-The `before` helper returns the portion of a string between two values.
+The `between()` helper returns the portion of a string between two values.
 
 ```swift
 let originalString = "john@apple.com"
@@ -69,13 +70,31 @@ let result = originalString.between("john@", and: ".com")
 print(result) // Optional("apple")
 ```
 
-### `camel case`
+### `camelCase`
 
-The `camelCased` helper converts the given string to camelCaseLikeThis.
+The `camelCased()` helper converts the given string to camelCaseLikeThis.
 
 ```swift
 var originalString = "Everyone CAN Code"
 var result = originalString.camelCased()
 
 print(result) // everyoneCanCode
+```
+
+### `containsAll`
+
+The `containsAll()` helper determines if the given string contains all of the values in a given array.
+
+```swift
+let originalString = "hello@example.com"
+let result = originalString.containsAll(["hello", "@", ".com"])
+
+print(result) // true
+```
+
+```swift
+let originalString = "hello@example.com"
+let result = originalString.containsAll(["hello", "@", ".org"])
+
+print(result) // false
 ```
