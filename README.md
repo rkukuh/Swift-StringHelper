@@ -33,6 +33,7 @@ These following methods are available for working with and manipulating `String`
 - [`before`](https://github.com/rkukuh/Swift-StringHelper#before)
 - [`between`](https://github.com/rkukuh/Swift-StringHelper#between)
 - [`camelCase`](https://github.com/rkukuh/Swift-StringHelper#camelcased)
+- [`containsAll`](https://github.com/rkukuh/Swift-StringHelper#containsall)
 
 ## Usage
 
@@ -78,4 +79,22 @@ var originalString = "Everyone CAN Code"
 var result = originalString.camelCased()
 
 print(result) // everyoneCanCode
+```
+
+### `containsAll`
+
+The `containsAll()` helper determines if the given string contains all of the values in a given array.
+
+```swift
+let originalString = "hello@example.com"
+let result = originalString.containsAll(["hello", "@", ".com"])
+
+print(result) // true
+```
+
+```swift
+let originalString = "hello@example.com"
+let result = originalString.containsAll(["hello", "@", ".org"])
+
+print(result) // false
 ```
