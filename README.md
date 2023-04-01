@@ -27,18 +27,18 @@ import SwiftStringHelper
 
 ## Available Methods
 
-These following methods are available for working with and manipulating `String` native library. See [Usage](https://github.com/rkukuh/Swift-StringHelper#usage) section below for detail.
+These following methods are available for working with and manipulating `String` native library.
 
 - [`after`](https://github.com/rkukuh/Swift-StringHelper#after)
 - [`before`](https://github.com/rkukuh/Swift-StringHelper#before)
 - [`between`](https://github.com/rkukuh/Swift-StringHelper#between)
-- [`camel case`](https://github.com/rkukuh/Swift-StringHelper#camel-case)
+- [`camelCase`](https://github.com/rkukuh/Swift-StringHelper#camelcased)
 
 ## Usage
 
 ### `after`
 
-The `after` helper returns the remainder of a string after the first occurrence of a given value.
+The `after()` helper returns the remainder of a string after the first occurrence of a given value.
 
 ```swift
 let originalString = "john@apple.com"
@@ -49,7 +49,7 @@ print(result) // apple.com
 
 ### `before`
 
-The `before` helper returns the portion of a string before the first occurrence of a given value.
+The `before()` helper returns the portion of a string before the first occurrence of a given value.
 
 ```swift
 let originalString = "john@apple.com"
@@ -60,7 +60,7 @@ print(result) // john
 
 ### `between`
 
-The `before` helper returns the portion of a string between two values.
+The `between()` helper returns the portion of a string between two values.
 
 ```swift
 let originalString = "john@apple.com"
@@ -69,9 +69,9 @@ let result = originalString.between("john@", and: ".com")
 print(result) // Optional("apple")
 ```
 
-### `camel case`
+### `camelCase`
 
-The `camelCased` helper converts the given string to camelCaseLikeThis.
+The `camelCased()` helper converts the given string to camelCaseLikeThis.
 
 ```swift
 var originalString = "Everyone CAN Code"
